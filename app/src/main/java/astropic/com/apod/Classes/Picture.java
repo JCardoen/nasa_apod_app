@@ -20,4 +20,15 @@ public class Picture {
         this.explanation = explanation;
         this.url = url;
     }
+
+    @Override
+    public String toString() {
+        return "Picture{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", date='" + date + '\'' +
+                ", explanation='" + explanation + '\'' +
+                ", url='" + url + '\'' +
+                '}';
+    }
 }

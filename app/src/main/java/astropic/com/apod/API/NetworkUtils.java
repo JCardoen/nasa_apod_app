@@ -14,12 +14,12 @@ import java.util.Scanner;
 
 public class NetworkUtils {
     final static String BASE_URL = "https://api.nasa.gov/planetary/apod";
-    final static String QUERY_PARAM = "api_key=";
+    final static String QUERY_PARAM = "?api_key=";
     final static String API_KEY = "09445ijXzQ8FW1z4oHYYmusW6NGNGyoaUvttm8Wv";
 
     // Static method to build the URL
     public static URL buildUrl() {
-        String URL = BASE_URL + "?date=2017-01-11&" + QUERY_PARAM + API_KEY;
+        String URL = BASE_URL + QUERY_PARAM + API_KEY;
 
         Uri builtUri = Uri.parse(URL).buildUpon().build();
 
